@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="testando positions no css">
+    <title>Positions</title>
+    <style>
+        html,body {
+           height: 100vh;
+        }
+
+        div {
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: 5px;
+            color: white;
+        }
+
+        .static {
+            background-color: blue;
+        }
+
+        .relative {
+            position: relative;
+            background-color: red;
+            bottom: 50%;
+            left: 50%;
+        }
+
+        .absolute1 {
+            position: absolute;
+            background-color: rgb(192, 192, 5);
+            left: 75%;
+            top: 50%;
+        }
+
+        .container-absolute {
+            position: relative;
+            
+            height: 400px;
+            width: 400px;
+        }
+
+        .absolute2 {
+            position: absolute;
+            background-color: purple;
+            top: 150px;
+            left: 140px;
+        }
+
+        .fixed {
+            position: fixed;
+            width: 400px;
+            background-color: green;
+            top: 4%;
+            left: 30%;
+        }
+
+        .sticky1 {
+            position: sticky;
+            background-color: orange;
+            bottom: 70%;
+        }
+
+        .container-sticky {         
+            left: 20%;
+            bottom: 70%;
+            height: 1200px;
+            width: 600px;
+        }
+
+        .sticky2 {
+            position: sticky;
+            background-color: orange;
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estudando Positions</h1>
+
+    <div class="static">STATIC</div>
+    <div class="relative">RELATIVE</div>
+    <div class="absolute1">ABSOLUTE</div>
+
+    <div class="container-absolute">
+        <div class="absolute2">ABSOLUTE EM CONTAINER</div>
+    </div>
+
+    <div class="fixed">FIXED</div>
+
+    <div class="sticky1">STICKY</div>
+
+    <div class="container-sticky">
+        <div class="sticky2">STICKY</div>
+    </div>
+</body>
+</html>

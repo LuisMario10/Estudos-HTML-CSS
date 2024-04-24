@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #content {
+        width: 52vw;
+        height: 68vh;
+    }
+
+    #texts {
+        display: flex; 
+        flex-direction: column;
+        gap: 12px;
+        flex-wrap: nowrap; 
+        margin-top: 10px;
+        float: right;
+        width: 50%;
+    }
+
+    #image {
+        background: url(../images/image-product-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+}

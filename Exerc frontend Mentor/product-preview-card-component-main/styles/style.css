@@ -1,0 +1,113 @@
+.attribution { font-size: 1.1em; text-align: center; height: 5 0px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;500&family=Montserrat:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(254, 213, 220);
+}
+
+#image {
+  background: url(../images/image-product-mobile.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 232px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background: rgba(0,0,0,.3);
+  height: 100vh;
+  width: auto;
+}
+
+#content {
+  background: #fff;
+  box-shadow: 3px 3px 4px black;
+  margin-top: 16px;
+  height: 540px;
+  width: 88vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#texts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#text-perfume {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  color: rgba(105, 103, 103, 0.685);
+  margin-left: 10px;
+  margin-top: 30px;
+  letter-spacing: 4px;
+}
+
+#title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-top: 16px;
+}
+
+#text-main {
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  text-align: justify;
+  color: rgba(105, 103, 103, 0.685);
+}
+
+
+#price {
+  font-family: 'Fraunces', serif;
+  font-weight: bolder;
+  padding: 16px;
+  font-size: 2em;
+  color: green;
+}
+
+#old-price {
+  color: rgba(105, 103, 103, 0.685);
+  text-decoration: line-through;
+}
+
+#buttons {
+  /* margin-top: 40px; */
+  display: flex;
+  justify-content: center;
+}
+
+#buy-button {
+  width: 80%;
+  height: 50px;
+  background: green;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+#buy-button:hover {
+  background: rgb(0, 255, 0);
+  color: rgb(4, 105, 4);
+}
+
+#image-cart {
+  margin-right: 4px;
+}

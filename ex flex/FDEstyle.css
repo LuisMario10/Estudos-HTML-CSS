@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1,2em;
+    text-decoration: none;
+    margin-right: 0px;
+}
+
+body {
+    background-color: rgb(186, 204, 228);
+    max-width: 2150px;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(94, 132, 238);
+    color: rgb(146, 255, 219);
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 15px;
+}
+
+header nav {
+    background-color: rgb(105, 142, 247);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#tituloconteiner {
+    background-image: linear-gradient(to top, rgb(186, 204, 228), rgb(94, 132, 238));
+}
+
+header nav a {
+    font-weight: bold;
+    color:rgb(146, 255, 219);
+    padding: 10px;
+    margin: 2px;
+}
+
+.links{
+    flex-shrink: 2;
+}
+
+header nav a:hover {
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 5px;
+    background-color:rgb(146, 255, 219);
+    color:rgb(94, 132, 238);
+    transition-duration: .5s;
+}
+
+.flex {
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+    background-color: rgb(131, 159, 236);
+    border-radius: 5px 5px 0px 0px;
+    min-height: 320px;
+    max-height: auto;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.itemflex {
+    background-color:rgb(195, 243, 227);
+    border: 1px solid rgb(94, 132, 238);
+    height: 300px;
+    flex-basis: 300px;
+    margin: 5px
+}
+
+.grid {
+    margin: 0px 10px 3px 10px ;
+    padding: 10px;
+    background-color: rgb(131, 159, 236);
+    border-radius: 0px 0px 5px 5px;
+    min-height: 320px;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.itemgrid {
+    background-color: rgb(195, 243, 227);
+    border: 1px solid rgb(94, 132, 238);
+    height: 300px;
+    margin: 5px;
+}
+
+#prod1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+}
+
+#prod2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#prod3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#prod5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+   
+
+.footer {
+    background-color: black;
+    color: white;
+}
+.footer h1 {
+    width: 100%;
+}
+
+.footer > #linha {
+    background-color: rgb(186, 204, 228);
+    font-size: 2px;
+}
+

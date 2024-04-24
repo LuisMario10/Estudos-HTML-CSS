@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(233, 200, 13),rgb(233, 109, 8));
+}
+
+header {
+    color: rgb(0, 0, 0);
+    background-color: rgb(221, 78, 1);
+    height: 70px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    background-color:rgb(221, 34, 1);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px 15px 0px 15px;
+    box-shadow: 1px 1px 5px black;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+header > p {
+    color: rgb(0, 0, 0);
+}
+
+nav#menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav#menu > a {
+    background-color:rgb(228, 68, 4);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 0px 10px 10px 10px;
+    box-shadow:1px 1px 3px rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 7px;
+    margin: 3px;
+}
+
+.link{
+    flex-shrink: 2;
+}
+
+nav#menu > a:hover {
+    background-color: rgb(248, 128, 80);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+section {
+    background-color: rgba(236, 194, 163, 0.61);
+    border-radius: 0px 10px 10px 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.692);
+    padding-bottom: 10px;
+}
+
+.recentes {
+    text-align: center;
+    background-color:rgba(236, 194, 163, 0.61);
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 10px;
+ } 
+
+ .noticiasrecentes {
+    width: 300px;
+    margin-bottom: 10px;
+ }
+
+ #esportes {
+    display: grid;
+    grid-template-areas:
+    'noticia1 noticia2'
+    'noticia3 noticia4';
+ }    
+
+ #mundo {
+    display: grid;
+    grid-template-areas:
+    'noticia5 noticia6';
+ }    
+
+ #brasil {
+    display: grid;
+    grid-template-areas:
+    'noticia7 noticia8'
+    'noticia9 noticia10';
+ }
+
+ #tec {
+    display: grid;
+    grid-template-areas:
+    'noticia12 noticia11'
+    'noticia13 noticia11'
+ }
+
+
+#noticia1 {
+    grid-area: noticia1;
+}
+
+#noticia5 {
+    grid-area: noticia5;
+}
+
+#noticia6 {
+    grid-area: noticia6
+}
+#noticia11 {
+    grid-area: noticia11
+}
+
+
+#noticia12 {
+    grid-area: noticia12;
+}
+
+#noticia13 {
+    grid-area: noticia13;
+}
+
+.ad {
+    background-color: rgb(248, 188, 24);
+    height: auto;
+    max-width: 300px;
+
+}
+
+.ad > h1 {
+    background-color: yellow;
+    padding-bottom: 20px;
+}
+
+.ad > p {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 10px;
+}
+
+
+fieldset > .titulosecao {
+    background-color:rgb(221, 34, 1);
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 1px solid black;
+    height: 25px;
+    padding: 8px; 
+    margin-left: 8px;
+    
+}
+
+.assunto {
+    display: grid;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    grid-gap: 5px;
+}
+
+
+
+article {
+    height: 410px;
+    max-width: 560px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.76);
+    padding: 8px;
+}
+
+article > h1 {
+    text-align: center;
+    background-color: rgba(250, 197, 148, 0.486);
+}
+
+article > p {
+    text-align: justify;
+}
+
+.noticiaimpar {
+    margin-left: 10px;
+}
+
+.noticiapar {
+    margin-right: 10px;
+}
+#esportes > h1 {
+    background-color: rgba(250, 103, 49, 0.685);
+}
+
+#mundo > h1 {
+    background-color:rgb(230, 126, 42);
+}
+
+#brasil > h1 {
+    background-color: rgb(240, 240, 139); 
+}
+
+#tec > h1 {
+    background-color: rgb(241, 232, 192);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer p {
+    font-size: 15px;
+
+}
+.menurodape {
+    padding: 15px;
+}
+
+.menurodape p {
+    font-size: 3em;
+}
+.menurodape > #html {
+    text-decoration: none;
+    color: white;
+    font-size: 2.7em;
+    background-color:red;
+    border-radius: 3px;
+}
+
+.menurodape > #css {
+    text-decoration: none;
+    color: white;
+    font-size: 2.7em;
+    background-color:blue;
+    border-radius: 3px;
+}
+
+.menurodape > #html:hover {
+    background-image: linear-gradient(to left, red, rgb(245, 70, 70));
+    padding: 3px;
+    font-size: 3em;
+    color: rgb(245, 245, 245);
+    transition-duration: .5s
+}
+
+.menurodape > #css:hover {
+    background-image: linear-gradient(to left, blue, rgb(83, 85, 224));
+    font-size: 3em;
+    padding: 3px;
+    color: rgb(245, 245, 245);
+    transition-duration: .5s
+}
+div#linha {
+    border: 1px solid white;
+}
